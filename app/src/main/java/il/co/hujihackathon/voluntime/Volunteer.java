@@ -8,6 +8,7 @@ public class Volunteer {
     public String name, mail, password;
     public int age;
 
+
     public Volunteer(String mail, String password, String name, int age){
         this.name = name;
         this.age = age;
@@ -21,6 +22,10 @@ public class Volunteer {
 
     public String getMail() {
         return mail;
+    }
+
+    public String login() {
+        return mail.substring(0, mail.indexOf("@"));
     }
 
     public String getPassword() {

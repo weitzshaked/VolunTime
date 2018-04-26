@@ -21,16 +21,7 @@ public class SeekersDB {
         myRef = database.getReference("SeekersDB");
     }
 
-    public void addSeeker(String mail, String password, String name, int age){
-        myRef.child("Testing").setValue("hi it's working!");
-
-        HashMap<String, Object> myMap = new HashMap<>();
-        myMap.put("a", true);
-        myMap.put("b", 1);
-        myMap.put("c", "asdansdalsd");
-        myMap.put("d", "null");
-
-        myRef.child("some_other_test").setValue(myMap);
-        myRef.child("some_other_test2").setValue(myMap);
+    public void addSeeker(Seeker seeker){
+        myRef.child(seeker.login()).setValue(seeker);
     }
 }
