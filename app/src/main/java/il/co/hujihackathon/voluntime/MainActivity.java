@@ -15,8 +15,6 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
-    private FirebaseDatabase mFirebaseDatabase;
-    private DatabaseReference mDatabaseReference;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -47,17 +45,6 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-//        initFirebase();
-
     }
 
-//    public void initFirebase() {
-//        FirebaseApp.initializeApp(this);
-//        mFirebaseDatabase = FirebaseDatabase.getInstance();
-//        mDatabaseReference  = mFirebaseDatabase.getReference();
-//    }
-
-    public void addVolunteer(String mail, String password, String name, int age){
-
-    }
 }

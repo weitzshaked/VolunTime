@@ -22,5 +22,7 @@ public class VolunteerApp extends Application {
         volunteerDB = VolunteerDB.getInstance();
         seekersDB = SeekersDB.getInstance();
         vdb = VDB.getInstance();
+        Volunteer newVol = new Volunteer("mail@gmail.com", "pass", "myname", 33);
+        volunteerDB.addVolunteer(newVol);
     }
 }

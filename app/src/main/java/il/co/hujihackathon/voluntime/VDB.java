@@ -18,4 +18,8 @@ public class VDB {
         myRef = database.getReference("VDB");
 
     }
+
+    public void addVDB(String mail, String password, String name, int age){
+//        myRef.child("some_other").setValue();
+    }
 }
