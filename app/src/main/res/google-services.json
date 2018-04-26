@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "552068326106",
+    "firebase_url": "https://voluntime-8be6f.firebaseio.com",
+    "project_id": "voluntime-8be6f",
+    "storage_bucket": "voluntime-8be6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552068326106:android:f8aedeb8413d7ca6",
+        "android_client_info": {
+          "package_name": "il.co.hujihackathon.voluntime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552068326106-bbe73vj6esjq5jf11gb4cb3fc7ufled3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnK2uRyT2T13MnAvK4-5t7QWCh67A2DA0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
