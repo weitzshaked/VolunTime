@@ -15,13 +15,13 @@ public class Seeker {
 
     }
 
-    public Seeker(String name, String mail, String vulonteering_area,
+    public Seeker(String name, String vulonteering_area,
                   int min_age_requsted, int max_age_requsted,
                   String location, String frequency, int days, String publicTransportation, int hours)
     {
         this.days = days;
         this.name = name;
-        this.mail = mail;
+//        this.mail = mail;
         this.hours = hours;
         this.vulonteering_area = vulonteering_area;
         this.frequency = frequency;

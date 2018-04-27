@@ -32,7 +32,9 @@ public class SeekersDB {
                         && (s.max_age_requsted >= vp.age && s.min_age_requsted <= vp.age) &&
                         s.vulonteering_area.equals(vp.volunteering_area)){
                     seekerslist.add(s);
+                    System.out.println("!!!!!" + s.vulonteering_area);
                 }
+
             }
             // ...
         }

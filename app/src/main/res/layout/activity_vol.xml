@@ -11,41 +11,32 @@
         android:id="@+id/spinnertype"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerfreq"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinnerage"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="19dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnertype" />
-
-    <Spinner
         android:id="@+id/spinnerfreq"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="190dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/age"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerage" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnertype" />
 
     <Spinner
         android:id="@+id/spinnerdays"
@@ -89,22 +80,37 @@
 
     <EditText
         android:id="@+id/city"
-        android:layout_width="156dp"
-        android:layout_height="23dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="18dp"
+        android:layout_width="160dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="92dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="City"
         app:layout_constraintStart_toStartOf="@+id/spinnerbus"
         app:layout_constraintTop_toBottomOf="@+id/spinnerbus" />
 
     <Button
         android:id="@+id/submit"
         android:layout_width="96dp"
-        android:layout_height="32dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
         android:text="Button"
         app:layout_constraintStart_toStartOf="@+id/city"
         app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="156dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="314dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Age"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/city"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerfreq" />
 </android.support.constraint.ConstraintLayout>

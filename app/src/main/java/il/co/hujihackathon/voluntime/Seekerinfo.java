@@ -22,7 +22,7 @@ public class Seekerinfo extends AppCompatActivity {
         setContentView(R.layout.activity_seekerinfo);
         // create a adapter
         String[] type = {"with the elderly","with children/adolescents","cooking for others","renovations"};
-        String[] age = {"10-20","21-30","30-50","50+","doesn't matter"};
+        final String[] age = {"10-20","21-30","30-50","50+","doesn't matter"};
         String[] freq = {"one-time","up to one month","up to six month","up to a year"};
         String[] days = {"1","2","3","4","5","6","7"};
         String[] hours = {"up to 2 hours","up to 4 hours","up to 8 hours","a whole day"};
@@ -76,8 +76,8 @@ public class Seekerinfo extends AppCompatActivity {
                 int weekDays = getWeekDays();
                 int[] weekHours = getWeekHours();
                 int[] age_range = getSpinnerAge();
-//              Seeker sk = new Seeker(interest,area,timeAway,bus,howOften,weekDays,weekHours);
-//              SeekersDB.getInstance().addSeekersDB(sk);
+                Seeker sk = new Seeker(name ,interest,age_range[0], age_range[1], city, howOften, weekDays, bus, weekHours[1]);
+                SeekersDB.getInstance().addSeeker(sk);
             }
 
         });
