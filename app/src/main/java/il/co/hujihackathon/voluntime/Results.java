@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import DBResults;
-
 import java.util.ArrayList;
 
 public class Results extends AppCompatActivity {

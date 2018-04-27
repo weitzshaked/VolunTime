@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import DBResults;
+import il.co.hujihackathon.voluntime.DBResults;
 
 import java.util.ArrayList;
 
