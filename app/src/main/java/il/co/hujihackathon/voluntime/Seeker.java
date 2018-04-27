@@ -10,6 +10,7 @@ public class Seeker {
     public String frequency;
     public int days, hours;
     public String publicTransportation;
+    public String description;
 
     public Seeker() {
 
@@ -17,11 +18,12 @@ public class Seeker {
 
     public Seeker(String name, String vulonteering_area,
                   int min_age_requsted, int max_age_requsted,
-                  String location, String frequency, int days, String publicTransportation, int hours)
+                  String location, String frequency, int days, String publicTransportation, int hours, String description)
     {
         this.days = days;
         this.name = name;
 //        this.mail = mail;
+        this.description = description;
         this.hours = hours;
         this.vulonteering_area = vulonteering_area;
         this.frequency = frequency;
@@ -33,6 +35,10 @@ public class Seeker {
 
     public String login() {
         return mail.substring(0, mail.indexOf("@"));
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public void setPublicTransportation(String publicTransportation) {

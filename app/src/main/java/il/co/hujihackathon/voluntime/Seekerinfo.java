@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -76,7 +75,8 @@ public class Seekerinfo extends AppCompatActivity {
                 int weekDays = getWeekDays();
                 int[] weekHours = getWeekHours();
                 int[] age_range = getSpinnerAge();
-                Seeker sk = new Seeker(name ,interest,age_range[0], age_range[1], city, howOften, weekDays, bus, weekHours[1]);
+                String description = getDescription();
+                Seeker sk = new Seeker(name ,interest,age_range[0], age_range[1], city, howOften, weekDays, bus, weekHours[1], description);
                 SeekersDB.getInstance().addSeeker(sk);
             }
 
@@ -124,6 +124,13 @@ public class Seekerinfo extends AppCompatActivity {
     public String getCity(){
         TextView city = (TextView) findViewById(R.id.city);
         String value = city.getText().toString();
+        Log.d(msg, value);
+        return value;
+    }
+
+    public String getDescription(){
+        TextView description = (TextView) findViewById(R.id.description);
+        String value = description.getText().toString();
         Log.d(msg, value);
         return value;
     }
