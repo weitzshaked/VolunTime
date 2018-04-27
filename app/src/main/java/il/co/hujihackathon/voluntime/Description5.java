@@ -3,7 +3,6 @@ package il.co.hujihackathon.voluntime;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
-import DBResults;
 import java.util.ArrayList;
 
 public class Description5 extends AppCompatActivity {

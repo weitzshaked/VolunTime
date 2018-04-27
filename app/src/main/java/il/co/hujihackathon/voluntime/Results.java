@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import DBResults;
+
 import java.util.ArrayList;
 
 public class Results extends AppCompatActivity {
@@ -40,8 +40,8 @@ public class Results extends AppCompatActivity {
             public void onClick(View v)
             {
                 // TODO Auto-generated method stub
-                Intent first = new Intent(getApplicationContext(),Description2.class);
-                startActivity(first);
+                Intent second = new Intent(getApplicationContext(),Description2.class);
+                startActivity(second);
 
             }
         });
@@ -53,8 +53,8 @@ public class Results extends AppCompatActivity {
             public void onClick(View v)
             {
                 // TODO Auto-generated method stub
-                Intent first = new Intent(getApplicationContext(),Description3.class);
-                startActivity(first);
+                Intent third = new Intent(getApplicationContext(),Description3.class);
+                startActivity(third);
 
             }
         });
@@ -66,8 +66,8 @@ public class Results extends AppCompatActivity {
             public void onClick(View v)
             {
                 // TODO Auto-generated method stub
-                Intent first = new Intent(getApplicationContext(),Description4.class);
-                startActivity(first);
+                Intent fourth = new Intent(getApplicationContext(),Description4.class);
+                startActivity(fourth);
 
             }
         });
@@ -79,8 +79,8 @@ public class Results extends AppCompatActivity {
             public void onClick(View v)
             {
                 // TODO Auto-generated method stub
-                Intent first = new Intent(getApplicationContext(),Description5.class);
-                startActivity(first);
+                Intent fifth = new Intent(getApplicationContext(),Description5.class);
+                startActivity(fifth);
 
             }
         });

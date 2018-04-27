@@ -31,13 +31,13 @@ public class VolunteerApp extends Application {
 //                20, 35,"Jerusalem","4",2,"no",1, "please help walk kids back from school");
 //        Seeker s4 = new Seeker("shimmy", "cooking for others", 16,
 //                40, "holon","up to a month",7,"no",1, "somone to help me cook");
-//        seekersDB.addSeeker(s1);
 //        seekersDB.addSeeker(s2);
 //        seekersDB.addSeeker(s3);
 //        seekersDB.addSeeker(s4);
-        VPrefrences vPrefrences = new VPrefrences("kids", "hulon",
-                "yes", "up to a year",3,3, 1,33);
-        vdb.addVDB(vPrefrences);
+//        VPrefrences vPrefrences = new VPrefrences("kids", "hulon",
+//                "yes", "up to a year",3,3, 1,33);
+//        vdb.addVDB(vPrefrences);
+//        seekersDB.addSeeker(s1);
         //vPrefrences.bestMatch();
     }
 }

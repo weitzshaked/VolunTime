@@ -17,7 +17,7 @@ public class SeekersDB {
     public FirebaseDatabase database;
     public DatabaseReference myRef;
     public VPrefrences vp;
-    public ArrayList<Seeker> seekerslist;
+    static public ArrayList<Seeker> seekerslist;
 
 
     public ValueEventListener postListener = new ValueEventListener() {
@@ -32,7 +32,6 @@ public class SeekersDB {
                         && (s.max_age_requsted >= vp.age && s.min_age_requsted <= vp.age) &&
                         s.vulonteering_area.equals(vp.volunteering_area)){
                     seekerslist.add(s);
-                    System.out.println("!!!!!" + s.vulonteering_area);
                 }
 
             }
@@ -59,11 +58,23 @@ public class SeekersDB {
 
     private SeekersDB() {
 
-
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("SeekersDB");
         this.seekerslist = new ArrayList<>();
-
+        Seeker s4 = new Seeker("shimmy", "cooking for others", 16, 40, "holon","up to a month",7,"no",1, "cook for my children 09-7777777");
+        Seeker s2 = new Seeker("noam", "with the elderly",
+                20, 35,"Tel Aviv","up to a month",2,"no",6, "looking for company. 0547894563");
+        Seeker s3 = new Seeker("gali", "with children/adolescents",
+                20, 35,"Jerusalem","4",2,"no",1, "please help walk kids back from school. 0504564445");
+        Seeker s5 = new Seeker("emmanuel", "cooking for others", 16,
+                40, "holon","up to a month",7,"no",1, "somone to help me cook. 0522222222");
+        Seeker s1 = new Seeker("shaked", "with children/adolescents",
+                20, 35,"holon","up to a year",2,"yes",4, "looking for someone too help with homework. 0544444444");
+        seekerslist.add(s4);
+        seekerslist.add(s1);
+        seekerslist.add(s2);
+        seekerslist.add(s3);
+        seekerslist.add(s5);
 
     }
 
@@ -74,7 +85,7 @@ public class SeekersDB {
 
     public void matchSeeker(VPrefrences vPrefrences){
         this.setCurVP(vPrefrences);
-        myRef.addValueEventListener(postListener);
+//        myRef.addValueEventListener(postListener);
 
     }
 }

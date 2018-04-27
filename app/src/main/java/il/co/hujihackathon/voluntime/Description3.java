@@ -6,7 +6,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import DBResults;
 public class Description3 extends AppCompatActivity {
 
     ArrayList<String> descriptions = DBResults.getDescriptions();

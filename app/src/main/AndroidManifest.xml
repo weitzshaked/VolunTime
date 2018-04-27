@@ -42,8 +42,16 @@
             android:label="sign_up"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".vol"
-
             />
+
+        <activity
+            android:name=".Results" />
+        <activity android:name=".Description1" />
+        <activity android:name=".Description2" />
+        <activity android:name=".Description3" />
+        <activity android:name=".Description4" />
+        <activity android:name=".Description5" />
+
     </application>
 
 </manifest>

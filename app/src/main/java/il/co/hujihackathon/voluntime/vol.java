@@ -1,5 +1,6 @@
 package il.co.hujihackathon.voluntime;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -78,9 +79,21 @@ public class vol extends AppCompatActivity {
                             weekHours[1], weekHours[0], age);
                     //TODO fix age
                     VDB.getInstance().addVDB(vp);
+
                 }
 
             });
+            submit.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+            // TODO Auto-generated method stub
+                Intent androidsolved_intent = new Intent(getApplicationContext(), Results.class);
+                startActivity(androidsolved_intent);
+
+
+            }
+        });
 
         }
 
