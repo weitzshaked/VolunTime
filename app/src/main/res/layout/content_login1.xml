@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/signup"
+    android:background="@drawable/signin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".signUp"
-    tools:showIn="@layout/activity_sign_up">
+    tools:context=".Login1"
+    tools:showIn="@layout/activity_login1">
 
 </android.support.constraint.ConstraintLayout>

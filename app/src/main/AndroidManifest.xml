@@ -38,9 +38,23 @@
             android:name=".signUp"
             android:label="sign_up"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".vol"
-
-            />
+        <activity android:name=".vol" />
+        <activity
+            android:name=".Who"
+            android:label="@string/title_activity_who"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login1"
+            android:label="@string/title_activity_login1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScrollingActivity1"
+            android:label="@string/title_activity_scrolling1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".whoare"
+            android:label="@string/title_activity_whoare"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
