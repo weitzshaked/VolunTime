@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 // TODO Auto-generated method stub
-                Intent androidsolved_intent1 = new Intent(getApplicationContext(), whoare.class);
+                Intent androidsolved_intent1 = new Intent(getApplicationContext(), signin.class);
                 startActivity(androidsolved_intent1);
 
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 // TODO Auto-generated method stub
-                Intent androidsolved_intent2 = new Intent(getApplicationContext(), signUp.class);
+                Intent androidsolved_intent2 = new Intent(getApplicationContext(), signingUp.class);
                 startActivity(androidsolved_intent2);
 
 

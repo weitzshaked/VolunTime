@@ -2,8 +2,6 @@ package il.co.hujihackathon.voluntime;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -50,7 +48,7 @@ public class Login1 extends AppCompatActivity {
     }
 
     public String getmail() {
-        TextView mail = (TextView) findViewById(R.id.editText4);
+        TextView mail = (TextView) findViewById(R.id.editText2);
         String value = mail.getText().toString();
         Log.d(msg, value);
         return value;

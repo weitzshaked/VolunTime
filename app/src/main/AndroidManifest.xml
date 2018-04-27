@@ -57,6 +57,11 @@
         <activity
             android:name=".whoare"
             android:label="@string/title_activity_whoare"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".signin" />
+        <activity
+            android:name=".signingUp"
+            android:label="@string/title_activity_signing_up"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

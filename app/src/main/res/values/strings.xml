@@ -115,4 +115,5 @@
     <string name="title_activity_login1">Login1</string>
     <string name="title_activity_scrolling1">ScrollingActivity1</string>
     <string name="title_activity_whoare">whoare</string>
+    <string name="title_activity_signing_up">signingUp</string>
 </resources>
