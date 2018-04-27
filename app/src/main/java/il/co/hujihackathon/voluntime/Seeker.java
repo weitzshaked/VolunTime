@@ -34,7 +34,7 @@ public class Seeker {
     }
 
     public String login() {
-        return mail.substring(0, mail.indexOf("@"));
+        return this.name;
     }
 
     public String getDescription() {
