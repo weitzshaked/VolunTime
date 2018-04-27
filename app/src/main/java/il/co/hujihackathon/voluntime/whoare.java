@@ -1,12 +1,15 @@
 package il.co.hujihackathon.voluntime;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class whoare extends AppCompatActivity {
 
     Button button1, button2;
     @Override
@@ -20,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 // TODO Auto-generated method stub
-                Intent androidsolved_intent1 = new Intent(getApplicationContext(), signin.class);
+                Intent androidsolved_intent1 = new Intent(getApplicationContext(), vol.class);
                 startActivity(androidsolved_intent1);
 
 
@@ -35,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 // TODO Auto-generated method stub
-                Intent androidsolved_intent2 = new Intent(getApplicationContext(), signingUp.class);
+                Intent androidsolved_intent2 = new Intent(getApplicationContext(), Seekerinfo.class);
                 startActivity(androidsolved_intent2);
 
 
             }
         });
     }
-}
 
+}
