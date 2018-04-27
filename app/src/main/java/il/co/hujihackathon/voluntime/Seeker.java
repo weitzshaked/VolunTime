@@ -4,23 +4,26 @@ import java.util.ArrayList;
 
 public class Seeker {
     public String name, mail;
-    public ArrayList<String> vulonteering_area;
-    public int min_age_requsted, max_age_requsted, time_to_arrive;
-    public int[] location;
-    public int frequency;
-    public ArrayList<Integer> days;
-    public Boolean publicTransportation;
+    public String vulonteering_area;
+    public int min_age_requsted, max_age_requsted;
+    public String location;
+    public String frequency;
+    public int days, hours;
+    public String publicTransportation;
 
+    public Seeker() {
 
-    public Seeker(String name, String mail, ArrayList<String> vulonteering_area,
-                  int min_age_requsted, int max_age_requsted, int time_to_arrive,
-                  int[] location, int frequency, ArrayList<Integer> days, boolean publicTransportation)
+    }
+
+    public Seeker(String name, String mail, String vulonteering_area,
+                  int min_age_requsted, int max_age_requsted,
+                  String location, String frequency, int days, String publicTransportation, int hours)
     {
         this.days = days;
         this.name = name;
         this.mail = mail;
+        this.hours = hours;
         this.vulonteering_area = vulonteering_area;
-        this.time_to_arrive = time_to_arrive;
         this.frequency = frequency;
         this.min_age_requsted = min_age_requsted;
         this.max_age_requsted = max_age_requsted;
@@ -32,7 +35,7 @@ public class Seeker {
         return mail.substring(0, mail.indexOf("@"));
     }
 
-    public void setPublicTransportation(Boolean publicTransportation) {
+    public void setPublicTransportation(String publicTransportation) {
         this.publicTransportation = publicTransportation;
     }
 
@@ -40,7 +43,7 @@ public class Seeker {
         return name;
     }
 
-    public Boolean getPublicTransportation() {
+    public String getPublicTransportation() {
         return publicTransportation;
     }
 
@@ -48,7 +51,7 @@ public class Seeker {
         return mail;
     }
 
-    public ArrayList<String> getVulonteering_area() {
+    public String getVulonteering_area() {
         return vulonteering_area;
     }
 
@@ -60,19 +63,15 @@ public class Seeker {
         return max_age_requsted;
     }
 
-    public int getTime_to_arrive() {
-        return time_to_arrive;
-    }
-
-    public int[] getLocation() {
+    public String getLocation() {
         return location;
     }
 
-    public int getFrequency() {
+    public String getFrequency() {
         return frequency;
     }
 
-    public ArrayList<Integer> getDays() {
+    public int getDays() {
         return days;
     }
 
@@ -84,7 +83,7 @@ public class Seeker {
         this.mail = mail;
     }
 
-    public void setVulonteering_area(ArrayList<String> vulonteering_area) {
+    public void setVulonteering_area(String vulonteering_area) {
         this.vulonteering_area = vulonteering_area;
     }
 
@@ -96,19 +95,16 @@ public class Seeker {
         this.max_age_requsted = max_age_requsted;
     }
 
-    public void setTime_to_arrive(int time_to_arrive) {
-        this.time_to_arrive = time_to_arrive;
-    }
 
-    public void setLocation(int[] location) {
+    public void setLocation(String location) {
         this.location = location;
     }
 
-    public void setFrequency(int frequency) {
+    public void setFrequency(String frequency) {
         this.frequency = frequency;
     }
 
-    public void setDays(ArrayList<Integer> days) {
+    public void setDays(int days) {
         this.days = days;
     }
 }
